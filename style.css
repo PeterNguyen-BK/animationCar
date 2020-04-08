@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: linear-gradient(to right, #8E78FF, #FC7D78);
+}
+
+.sky{
+    width:70vw;
+    height:80vh;
+    margin: 70px auto;
+    background-image: url(Img_1.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(61, 61, 61);
+}
+
+.sky .road{
+    width:500%;
+    height: 200px;
+    background-image: url(Img_02.png);
+    position: absolute;
+    bottom: 0; left:0;
+    animation: roadMove 6s linear infinite;
+}
+
+@keyframes roadMove{
+    100%{transform: translateX(-2150px);}
+}
+
+.sky .car{
+    position: absolute;
+    bottom:100px;
+    left:150px;
+}
+
+.sky .car .carImg{
+    animation: carMove 1s linear infinite;
+}
+
+
+
+@keyframes carMove{
+    100%{transform: translateY(-1px);}
+    50%{transform: translateY(2px);}
+    0%{transform: translateY(-1px);}
+}
